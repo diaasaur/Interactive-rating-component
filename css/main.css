@@ -98,10 +98,6 @@ body {
 	left: 50%;
 	transform: translate(-50%, -40%);
 }
-.rating-scale > div:hover {
-	background-color: var(--light-grey);
-	color: var(--white);
-}
 
 div.selected {
 	color: var(--white);
@@ -121,10 +117,6 @@ div.selected {
 	cursor: pointer;
 	letter-spacing: 2px;
 	font-weight: 500;
-}
-.submit:hover {
-	background-color: var(--white);
-	color: var(--orange);
 }
 
 /* rating info */
@@ -163,4 +155,17 @@ div.selected {
 }
 .attribution a {
 	color: var(--orange);
+}
+
+/* prevent sticky hover on mobile  */
+@media (hover: hover) {
+	.rating-scale > div:hover {
+		background-color: var(--light-grey);
+		color: var(--white);
+	}
+
+	.submit:hover {
+		background-color: var(--white);
+		color: var(--orange);
+	}
 }
